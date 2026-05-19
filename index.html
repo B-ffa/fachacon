@@ -1,317 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fa Chacon</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fa Chacon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+body {
+  background-color: #fcfcfc;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8em;
+  font-weight: 400;
+}
 
-  <style>
-    body {
-      background-color: #fcfcfc;
-      color: #333;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.8em;
-      font-weight: 400;
-    }
+.menu-link {
+  letter-spacing: 0.15em;
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+}
 
-    .menu-link {
-      letter-spacing: 0.15em;
-      font-size: 12px;
-      color: #888;
-      text-transform: uppercase;
-      font-weight: 400;
-      text-decoration: none;
-    }
+.menu-link:hover {
+  color: #333;
+}
 
-    .menu-link:hover {
-      color: #333;
-    }
+a {
+  color: #6b8fa3;
+  text-decoration: none;
+}
 
-    a {
-      color: #6b8fa3;
-      text-decoration: none;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+.page {
+  display: none;
+}
 
-    .page {
-      display: none;
-    }
+.page.active {
+  display: block;
+}
 
-    .page.active {
-      display: block;
-    }
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
 
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 4px;
-    }
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
 
-    .photo-grid img {
-      width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
-      display: block;
-      cursor: pointer;
-    }
+.writing-section article {
+  margin-bottom: 2.4em;
+  padding-bottom: 2.2em;
+  border-bottom: 1px solid #ececec;
+}
 
-    .writing-section article {
-      margin-bottom: 2.4em;
-      padding-bottom: 2.2em;
-      border-bottom: 1px solid #ececec;
-    }
+.writing-section article:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
-    .writing-section article:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
+.entry-date {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 0.6em;
+}
 
-    .entry-date {
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #999;
-      margin-bottom: 0.6em;
-    }
+.entry-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 0.7em;
+  color: #222;
+}
 
-    .entry-title {
-      font-weight: 700;
-      font-size: 15px;
-      margin: 0 0 0.7em;
-      color: #222;
-    }
+.projects-placeholder {
+  color: #777;
+  font-size: 15px;
+}
 
-    .projects-placeholder {
-      color: #777;
-      font-size: 15px;
-    }
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 9999;
+  cursor: pointer;
+}
 
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 15, 15, 0.92);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-      z-index: 9999;
-      cursor: pointer;
-    }
+.lightbox.active {
+  display: flex;
+}
 
-    .lightbox.active {
-      display: flex;
-    }
+.lightbox img {
+  max-width: min(92vw, 1400px);
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  display: block;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  cursor: pointer;
+}
 
-    .lightbox img {
-      max-width: min(92vw, 1400px);
-      max-height: 90vh;
-      width: auto;
-      height: auto;
-      display: block;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
-      cursor: pointer;
-    }
-  </style>
+/* Kobo Highlights styles */
+.kobo-book {
+  margin-bottom: 2.8em;
+  padding-bottom: 2.4em;
+  border-bottom: 1px solid #ececec;
+}
+
+.kobo-book:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.kobo-book-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: #222;
+  margin: 0 0 0.2em;
+}
+
+.kobo-book-author {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 1.2em;
+}
+
+.kobo-highlight {
+  border-left: 2px solid #ddd;
+  padding-left: 1em;
+  margin-bottom: 1.2em;
+  color: #444;
+  font-style: italic;
+}
+
+.kobo-highlight-meta {
+  font-size: 11px;
+  color: #bbb;
+  font-style: normal;
+  margin-top: 0.3em;
+  letter-spacing: 0.05em;
+}
+
+.kobo-highlight-note {
+  font-style: normal;
+  font-size: 13px;
+  color: #666;
+  margin-top: 0.4em;
+  padding: 0.4em 0.8em;
+  background: #f7f7f7;
+  border-radius: 2px;
+}
+
+.kobo-book-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.kobo-book-toggle:hover .kobo-book-title {
+  color: #6b8fa3;
+}
+
+.kobo-highlights-list {
+  display: none;
+}
+
+.kobo-highlights-list.open {
+  display: block;
+}
+
+.kobo-chevron {
+  display: inline-block;
+  font-size: 10px;
+  color: #bbb;
+  margin-left: 6px;
+  transition: transform 0.2s;
+}
+
+.kobo-chevron.open {
+  transform: rotate(90deg);
+}
+
+.kobo-loading {
+  color: #999;
+  font-size: 13px;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.kobo-error {
+  color: #c0756a;
+  font-size: 13px;
+  padding: 1em 0;
+}
+
+.kobo-filter {
+  margin-bottom: 1.8em;
+}
+
+.kobo-filter input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+  font-size: 13px;
+  font-family: inherit;
+  color: #333;
+  background: transparent;
+  outline: none;
+}
+
+.kobo-filter input::placeholder {
+  color: #bbb;
+}
+
+.kobo-filter input:focus {
+  border-bottom-color: #6b8fa3;
+}
+
+.kobo-count {
+  font-size: 11px;
+  color: #bbb;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.6em;
+}
+</style>
 </head>
-
 <body>
 
-  <nav style="text-align:center; padding: 28px 0 20px;">
-    <a href="#" class="menu-link" onclick="toggleMenu(event)">MENU</a>
-  </nav>
+<nav style="text-align:center; padding: 28px 0 20px;">
+  <a href="#" class="menu-link" onclick="toggleMenu(event)">MENU</a>
+</nav>
 
-  <div id="menu-dropdown" style="display:none; text-align:center; padding-bottom: 20px;">
-    <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
-      onclick="showPage('home', event)">About</a>
+<div id="menu-dropdown" style="display:none; text-align:center; padding-bottom: 20px;">
+  <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
+     onclick="showPage('home', event)">About</a>
+  <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
+     onclick="showPage('writing', event)">Writing</a>
+  <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
+     onclick="showPage('projects', event)">Projects</a>
+  <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
+     onclick="showPage('photos', event)">Photos</a>
+  <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
+     onclick="showPage('kobo', event)">Kobo Highlights</a>
+</div>
 
-    <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
-      onclick="showPage('writing', event)">Writing</a>
+<div style="max-width:540px; margin:0 auto; padding:0 24px 60px;">
 
-    <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
-      onclick="showPage('projects', event)">Projects</a>
-
-    <a href="#" style="display:block; font-size:13px; color:#555; padding:4px 0;"
-      onclick="showPage('photos', event)">Photos</a>
+  <!-- HOME -->
+  <div id="page-home" class="page active">
+    <div style="margin-bottom:28px;">
+      <img src="https://i.imgur.com/z67Igz5.png" style="width:30%; display:block;">
+    </div>
+    <p style="margin-bottom:1.2em;">
+      Currently reading
+      <a href="https://books.google.com.pe/books?id=TR2MDAAAQBAJ">
+        Stoic Diary by Stephen Hanselman and Ryan Holiday
+      </a>.
+    </p>
+    <p style="margin-bottom:1.2em;">
+      Leaving a trace of my learnings and opinions,
+      feel free to look at my notes
+      <a href="#" onclick="showPage('writing', event)">here</a>.
+    </p>
+    <p>
+      You can find my projects
+      <a href="#" onclick="showPage('projects', event)">here</a>,
+      my photos <a href="#" onclick="showPage('photos', event)">here</a>
+      and my Kobo Highlights <a href="#" onclick="showPage('kobo', event)">here</a>.
+    </p>
   </div>
 
-  <div style="max-width:540px; margin:0 auto; padding:0 24px 60px;">
-
-    <!-- HOME -->
-    <div id="page-home" class="page active">
-
-      <div style="margin-bottom:28px;">
-        <img src="https://i.imgur.com/z67Igz5.png" style="width:30%; display:block;">
-      </div>
-
-      <p style="margin-bottom:1.2em;">
-        Currently reading
-        <a href="https://books.google.com.pe/books?id=TR2MDAAAQBAJ">
-          Stoic Diary by Stephen Hanselman and Ryan Holiday
-        </a>.
-      </p>
-
-      <p style="margin-bottom:1.2em;">
-        Leaving a trace of my learnings and opinions,
-        feel free to look at my notes
-        <a href="#" onclick="showPage('writing', event)">here</a>.
-      </p>
-
+  <!-- WRITING -->
+  <div id="page-writing" class="page writing-section">
+    <article>
+      <div class="entry-date">April 22, 2026</div>
+      <h2 class="entry-title">On self Accountability</h2>
       <p>
-        You can find my projects
-        <a href="#" onclick="showPage('projects', event)">here</a>,
-        and my photos
-        <a href="#" onclick="showPage('photos', event)">here</a>.
+        "Though, in reviewing the incidents of my administration, I am unconscious of intentional error, I am nevertheless too sensible of my defects not to think it probable that I may
+        have committed many errors. Whatever they may be, I fervently beseech the Almighty to avert or mitigate the evils to which they may tend. I shall also carry with me the hope,
+        that my Country will never cease to view them with indulgence..."
+        <i>― George Washington, George Washington's Farewell Address</i>
       </p>
+    </article>
+    <article>
+      <div class="entry-date">April 17, 2026</div>
+      <h2 class="entry-title">On staying interested</h2>
+      <p>
+        I wanna be like water if I can, 'cause water doesn't give a damn. Water doesn't give a damn.
+      </p>
+    </article>
+    <article>
+      <div class="entry-date">Abril 12, 2026</div>
+      <h2 class="entry-title">KLISHTA</h2>
+      <p>
+        La percepción de un suceso viene acompañada de mi juicio personal. Aprender a separar la <i>realidad</i> de como me <i>afecta personalmente</i> no solo es práctico sino que ahorra sufrimiento innecesario.
+      </p>
+    </article>
+  </div>
 
+  <!-- PROJECTS -->
+  <div id="page-projects" class="page">
+    <h2 style="font-weight:700;">Projects</h2>
+    <p class="projects-placeholder">On development.</p>
+  </div>
+
+  <!-- PHOTOS -->
+  <div id="page-photos" class="page">
+    <div class="photo-grid">
+      <img src="gallery/0SWE8284.webp" data-full="gallery/0SWE8284.webp">
+      <img src="gallery/1MG_0612.webp" data-full="gallery/1MG_0612.webp">
+      <img src="gallery/2MG_1068.webp" data-full="gallery/2MG_1068.webp">
+      <img src="gallery/3MG_1255.webp" data-full="gallery/3MG_1255.webp">
+      <img src="gallery/4MG_1272.webp" data-full="gallery/4MG_1272.webp">
+      <img src="gallery/6MG_1296.webp" data-full="gallery/6MG_1296.webp">
+      <img src="gallery/7MG_1353.webp" data-full="gallery/7MG_1353.webp">
+      <img src="gallery/8MG_1364.webp" data-full="gallery/8MG_1364.webp">
+      <img src="gallery/9MG_1374.webp" data-full="gallery/9MG_1374.webp">
+      <img src="gallery/12MG_1427.webp" data-full="gallery/12MG_1427.webp">
+      <img src="gallery/14MG_1468.webp" data-full="gallery/14MG_1468.webp">
+      <img src="gallery/15MG_1644.webp" data-full="gallery/15MG_1644.webp">
+      <img src="gallery/16MG_1692.webp" data-full="gallery/16MG_1692.webp">
+      <img src="gallery/17MG_1694.webp" data-full="gallery/17MG_1694.webp">
+      <img src="gallery/18MG_1700.webp" data-full="gallery/18MG_1700.webp">
+      <img src="gallery/19MG_1703.webp" data-full="gallery/19MG_1703.webp">
+      <img src="gallery/20MG_1709.webp" data-full="gallery/20MG_1709.webp">
+      <img src="gallery/21MG_1736.webp" data-full="gallery/21MG_1736.webp">
     </div>
+  </div>
 
-    <!-- WRITING -->
-    <div id="page-writing" class="page writing-section">
-        <article>
-        <div class="entry-date">April 22, 2026</div>
-        <h2 class="entry-title">On self Accountability</h2>
-        <p>
-          “Though, in reviewing the incidents of my administration, I am unconscious of intentional error, I am nevertheless too sensible of my defects not to think it probable that I may
-          have committed many errors. Whatever they may be, I fervently beseech the Almighty to avert or mitigate the evils to which they may tend. I shall also carry with me the hope, 
-          that my Country will never cease to view them with indulgence...”
-
-          <i>― George Washington, George Washington's Farewell Address</i>
-        </p>
-      </article>
-      
-      <article>
-        <div class="entry-date">April 17, 2026</div>
-        <h2 class="entry-title">On staying interested</h2>
-        <p>
-          I wanna be like water if I can, 'cause water doesn't give a damn. Water doesn't give a damn.
-        </p>
-      </article>
-
-      <article>
-        <div class="entry-date">Abril 12, 2026</div>
-        <h2 class="entry-title">KLISHTA</h2>
-        <p>
-            La percepción de un suceso viene acompañada de mi juicio personal. Aprender a separar la <i>realidad</i> de como me <i>afecta personalmente</i> no solo es práctico sino que ahorra sufrimiento innecesario.
-        </p>
-      </article>
-
+  <!-- KOBO HIGHLIGHTS -->
+  <div id="page-kobo" class="page">
+    <div class="kobo-filter">
+      <input type="text" id="kobo-search" placeholder="Search books or highlights..." oninput="filterKobo(this.value)">
     </div>
-
-    <!-- PROJECTS -->
-    <div id="page-projects" class="page">
-      <h2 style="font-weight:700;">Projects</h2>
-      <p class="projects-placeholder">On development.</p>
+    <div id="kobo-count" class="kobo-count"></div>
+    <div id="kobo-container">
+      <div class="kobo-loading">Loading highlights...</div>
     </div>
+  </div>
 
-    <!-- PHOTOS -->
-    <div id="page-photos" class="page">
-      <div class="photo-grid">
+</div>
 
-        <img src="gallery/0SWE8284.webp" data-full="gallery/0SWE8284.webp">
-        <img src="gallery/1MG_0612.webp" data-full="gallery/1MG_0612.webp">
-        <img src="gallery/2MG_1068.webp" data-full="gallery/2MG_1068.webp">
-        <img src="gallery/3MG_1255.webp" data-full="gallery/3MG_1255.webp">
-        <img src="gallery/4MG_1272.webp" data-full="gallery/4MG_1272.webp">
-        <img src="gallery/6MG_1296.webp" data-full="gallery/6MG_1296.webp">
-        <img src="gallery/7MG_1353.webp" data-full="gallery/7MG_1353.webp">
-        <img src="gallery/8MG_1364.webp" data-full="gallery/8MG_1364.webp">
-        <img src="gallery/9MG_1374.webp" data-full="gallery/9MG_1374.webp">
-        <img src="gallery/12MG_1427.webp" data-full="gallery/12MG_1427.webp">
-        <img src="gallery/14MG_1468.webp" data-full="gallery/14MG_1468.webp">
-        <img src="gallery/15MG_1644.webp" data-full="gallery/15MG_1644.webp">
-        <img src="gallery/16MG_1692.webp" data-full="gallery/16MG_1692.webp">
-        <img src="gallery/17MG_1694.webp" data-full="gallery/17MG_1694.webp">
-        <img src="gallery/18MG_1700.webp" data-full="gallery/18MG_1700.webp">
-        <img src="gallery/19MG_1703.webp" data-full="gallery/19MG_1703.webp">
-        <img src="gallery/20MG_1709.webp" data-full="gallery/20MG_1709.webp">
-        <img src="gallery/21MG_1736.webp" data-full="gallery/21MG_1736.webp">
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-image">
+</div>
 
+<script>
+const menuDropdown = document.getElementById("menu-dropdown");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+
+function toggleMenu(e) {
+  e.preventDefault();
+  menuDropdown.style.display =
+    menuDropdown.style.display === "block" ? "none" : "block";
+}
+
+function showPage(name, e) {
+  e.preventDefault();
+  document.querySelectorAll(".page").forEach(p => {
+    p.classList.remove("active");
+  });
+  document.getElementById("page-" + name).classList.add("active");
+  menuDropdown.style.display = "none";
+  closeLightbox();
+  if (name === "kobo") loadKoboHighlights();
+}
+
+const photos = Array.from(document.querySelectorAll(".photo-grid img"));
+let currentIndex = -1;
+
+photos.forEach((img, i) => {
+  img.addEventListener("click", () => openLightbox(i));
+});
+
+function openLightbox(i) {
+  currentIndex = i;
+  lightboxImage.src = photos[i].dataset.full;
+  lightbox.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeLightbox() {
+  lightbox.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+function nextImage() {
+  if (currentIndex >= photos.length - 1) { closeLightbox(); return; }
+  currentIndex++;
+  lightboxImage.src = photos[currentIndex].dataset.full;
+}
+
+lightbox.addEventListener("click", function(e) {
+  if (e.target === lightbox) closeLightbox();
+});
+
+lightboxImage.addEventListener("click", function(e) {
+  e.stopPropagation();
+  nextImage();
+});
+
+document.addEventListener("keydown", function(e) {
+  if (!lightbox.classList.contains("active")) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowRight" || e.key === "Enter") nextImage();
+});
+
+// ── Kobo Highlights ──────────────────────────────────────────
+
+let koboBooks = [];
+let koboLoaded = false;
+
+async function loadKoboHighlights() {
+  if (koboLoaded) return;
+  const container = document.getElementById("kobo-container");
+
+  try {
+    // Fetch the list of files in kobo-highlights/ via GitHub API
+    const apiUrl = "https://api.github.com/repos/B-ffa/fachacon/contents/kobo-highlights";
+    const res = await fetch(apiUrl);
+    if (!res.ok) throw new Error("Could not load highlights folder");
+    const files = await res.json();
+
+    const mdFiles = files.filter(f => f.name.endsWith(".md"));
+    if (mdFiles.length === 0) {
+      container.innerHTML = '<p style="color:#999; font-size:13px;">No highlights yet.</p>';
+      return;
+    }
+
+    // Fetch each file in parallel
+    const fetches = mdFiles.map(f => fetch(f.download_url).then(r => r.text()));
+    const contents = await Promise.all(fetches);
+
+    koboBooks = contents.map((text, i) => ({
+      filename: mdFiles[i].name,
+      content: text,
+      parsed: parseKoboMd(text)
+    })).filter(b => b.parsed);
+
+    koboLoaded = true;
+    renderKoboBooks(koboBooks, container);
+
+  } catch (err) {
+    container.innerHTML = `<p class="kobo-error">Could not load highlights. Make sure the GitHub Action has run successfully.<br><small>${err.message}</small></p>`;
+  }
+}
+
+function parseKoboMd(text) {
+  // Extract title and author from frontmatter
+  const fmMatch = text.match(/^---\n([\s\S]*?)\n---/);
+  let title = "", author = "";
+  if (fmMatch) {
+    const fm = fmMatch[1];
+    const titleMatch = fm.match(/title:\s*"?([^"\n]+)"?/);
+    const authorMatch = fm.match(/author:\s*"?([^"\n]+)"?/);
+    title = titleMatch ? titleMatch[1].trim() : "";
+    author = authorMatch ? authorMatch[1].trim() : "";
+  }
+  if (!title) return null;
+
+  // Extract highlights — blockquotes followed by optional note and meta
+  const highlights = [];
+  const hlRegex = /^>\s(.+?)(?:\n\n\*\*Note:\*\*\s(.+?))?\n\n\*—\s(.+?)\*$/gm;
+  let match;
+  while ((match = hlRegex.exec(text)) !== null) {
+    highlights.push({
+      text: match[1].trim(),
+      note: match[2] ? match[2].trim() : null,
+      meta: match[3] ? match[3].trim() : null
+    });
+  }
+
+  // Fallback: grab all blockquotes
+  if (highlights.length === 0) {
+    const bqMatches = [...text.matchAll(/^>\s(.+)$/gm)];
+    bqMatches.forEach(m => highlights.push({ text: m[1].trim(), note: null, meta: null }));
+  }
+
+  return { title, author, highlights };
+}
+
+function renderKoboBooks(books, container) {
+  const countEl = document.getElementById("kobo-count");
+  const totalHighlights = books.reduce((sum, b) => sum + b.parsed.highlights.length, 0);
+  countEl.textContent = `${books.length} book${books.length !== 1 ? "s" : ""} · ${totalHighlights} highlight${totalHighlights !== 1 ? "s" : ""}`;
+
+  container.innerHTML = books.map((book, i) => {
+    const { title, author, highlights } = book.parsed;
+    const hlHtml = highlights.map(h => `
+      <div class="kobo-highlight">
+        ${escHtml(h.text)}
+        ${h.note ? `<div class="kobo-highlight-note">${escHtml(h.note)}</div>` : ""}
+        ${h.meta ? `<div class="kobo-highlight-meta">${escHtml(h.meta)}</div>` : ""}
       </div>
-    </div>
+    `).join("");
 
-  </div>
+    return `
+      <div class="kobo-book" data-book-index="${i}">
+        <div class="kobo-book-toggle" onclick="toggleBook(${i})">
+          <div class="kobo-book-title">
+            ${escHtml(title)}
+            <span class="kobo-chevron" id="chevron-${i}">›</span>
+          </div>
+          <div class="kobo-book-author">${escHtml(author)} · ${highlights.length} highlight${highlights.length !== 1 ? "s" : ""}</div>
+        </div>
+        <div class="kobo-highlights-list" id="highlights-${i}">
+          ${hlHtml || '<p style="color:#bbb; font-size:13px;">No highlights found.</p>'}
+        </div>
+      </div>
+    `;
+  }).join("");
+}
 
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <img id="lightbox-image">
-  </div>
+function toggleBook(i) {
+  const list = document.getElementById("highlights-" + i);
+  const chevron = document.getElementById("chevron-" + i);
+  list.classList.toggle("open");
+  chevron.classList.toggle("open");
+}
 
-  <script>
-    const menuDropdown = document.getElementById("menu-dropdown");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightbox-image");
+function filterKobo(query) {
+  if (!koboLoaded) return;
+  const q = query.toLowerCase().trim();
+  const container = document.getElementById("kobo-container");
+  const filtered = q
+    ? koboBooks.filter(b =>
+        b.parsed.title.toLowerCase().includes(q) ||
+        b.parsed.author.toLowerCase().includes(q) ||
+        b.parsed.highlights.some(h => h.text.toLowerCase().includes(q))
+      )
+    : koboBooks;
+  renderKoboBooks(filtered, container);
+}
 
-    function toggleMenu(e) {
-      e.preventDefault();
-      menuDropdown.style.display =
-        menuDropdown.style.display === "block" ? "none" : "block";
-    }
-
-    function showPage(name, e) {
-      e.preventDefault();
-
-      document.querySelectorAll(".page").forEach(p => {
-        p.classList.remove("active");
-      });
-
-      document.getElementById("page-" + name).classList.add("active");
-      menuDropdown.style.display = "none";
-      closeLightbox();
-    }
-
-    const photos = Array.from(document.querySelectorAll(".photo-grid img"));
-    let currentIndex = -1;
-
-    photos.forEach((img, i) => {
-      img.addEventListener("click", () => openLightbox(i));
-    });
-
-    function openLightbox(i) {
-      currentIndex = i;
-      lightboxImage.src = photos[i].dataset.full;
-      lightbox.classList.add("active");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove("active");
-      document.body.style.overflow = "";
-    }
-
-    function nextImage() {
-      if (currentIndex >= photos.length - 1) {
-        closeLightbox();
-        return;
-      }
-
-      currentIndex++;
-      lightboxImage.src = photos[currentIndex].dataset.full;
-    }
-
-    lightbox.addEventListener("click", function(e) {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    lightboxImage.addEventListener("click", function(e) {
-      e.stopPropagation();
-      nextImage();
-    });
-
-    document.addEventListener("keydown", function(e) {
-      if (!lightbox.classList.contains("active")) return;
-
-      if (e.key === "Escape") closeLightbox();
-      if (e.key === "ArrowRight" || e.key === "Enter") nextImage();
-    });
-  </script>
-
+function escHtml(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+</script>
 </body>
 </html>
