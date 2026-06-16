@@ -85,3 +85,31 @@ imported: "2026-05-19T21:51:36.105Z"
 *— 30 abril 2026*
 
 ---
+
+## New Highlights (16 junio 2026)
+
+> Meditation is a way to cut through all these factors and reveal the primordial awareness that lies underneath the monkey mind and can act unchained by these causes and conditions.
+
+*— 29 mayo 2026*
+
+---
+> Tibet, this pure awareness is described as being mirrorlike. If you look at a mirror that is reflecting flowers, you may have a very favorable reaction and think, “Very good! I love flowers.” If the mirror is reflecting dog feces, your reaction will probably be very poor, thinking, “Yuck! Dog shit!” The point of the analogy is that none of these reflections changes the nature of the mirror.
+
+*— 02 mayo 2026*
+
+---
+> There have always been people like this, though. Both people eager to be the victim of a curse and those jumping at the chance to save them from their fate
+
+*— 29 abril 2026*
+
+---
+> When I was traveling through Budapest I was told about Magyar sorcerers who specialized in this type of magick. They would attach their spirits to living people and remain dormant during the day, but at night they would leave the host in an etheric or quasi-physical form and feed
+
+*— 30 abril 2026*
+
+---
+> You could easily add in some simple breathing exercises where you breathe in clean pure air and breathe out black smoky air. The Nine Purification Breath technique used in Tibetan yogas is just one example of this simple but effective procedure.
+
+*— 03 junio 2026*
+
+---

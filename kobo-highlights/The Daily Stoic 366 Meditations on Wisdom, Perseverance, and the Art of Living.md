@@ -806,3 +806,326 @@ Finally, we must make our own decisions—uninhibited by biases or popular notio
 *— 16 mayo 2026*
 
 ---
+
+## New Highlights (16 junio 2026)
+
+> Control your perceptions.
+Direct your actions properly.
+Willingly accept what’s outside your control.
+
+*— 07 marzo 2026*
+
+---
+> Philosophy is simply asking us to pay careful attention and to strive to be more than a pawn. As Viktor Frankl puts it in The Will to Meaning
+ , “Man is pushed by drives but pulled by values
+
+*— 11 marzo 2026*
+
+---
+> Ask yourself the following first thing in the morning:
+
+What am I lacking in attaining freedom from passion?
+What for tranquility?
+What am I? A mere body, estate-holder, or reputation? None of these things.
+What, then? A rational being.
+What then is demanded of me? Meditate on your actions.
+How did I steer away from serenity?
+What did I do that was unfriendly, unsocial, or uncaring?
+What did I fail to do in all these things?”
+
+
+—
+ E
+ PICTETUS,
+ D
+ ISCOURSES
+ , 
+ 4.6.34–35
+
+*— 12 marzo 2026*
+
+---
+> Whenever you get an impression of some pleasure, as with any impression, guard yourself from being carried away by it, let it await your action, give yourself a pause. After that, bring to mind both times, first when you have enjoyed the pleasure and later when you will regret it and hate yourself. Then compare to those the joy and satisfaction you’d feel for abstaining altogether. However, if a seemingly appropriate time arises to act on it, don’t be overcome by its comfort, pleasantness, and allure—but against all of this, how much better the consciousness of conquering it.”
+
+—
+ E
+ PICTETUS,
+ E
+ NCHIRIDION
+ , 
+ 34
+
+*— 19 marzo 2026*
+
+---
+> As Malcolm Gladwell wrote in Blink
+ , we are constantly making split-second decisions based on years of experience and knowledge as well as using the same skill to confirm prejudices
+
+*— 24 abril 2026*
+
+---
+> Look for patterns; find where cause meets effect.
+Only when this is done can negative behavior patterns be
+
+*— 11 mayo 2026*
+
+---
+> Mundus ipse est ingens deorum omnium templum
+ (The world itself is a huge temple of all the gods).
+Looking at the beautiful expanse of the sky is an antidote to the nagging pettiness of earthly concerns. And it is good and sobering to lose yourself in that as often as you can.
+
+*— 21 mayo 2026*
+
+---
+> This is why we need education, so that we might learn how to adjust our preconceived notions of the rational and irrational in harmony with nature
+
+*— 24 mayo 2026*
+
+---
+> t is easy to get wrapped up in our own opinions of things. It’s as if we’re adhering to invisible scripts—following instructions or patterns we don’t even understand. The more you question these scripts and the more you subject them to the rigorous test of your education, the more you’ll be your own compass.
+
+**Note:** Constante introspección es requerida además de seguir los protocolos de determinación entre lo que es bueno y lo que no
+
+*— 24 mayo 2026*
+
+---
+> Young friend, if you wish to be beautiful, then work diligently at human excellence. And what is that? Observe those whom you praise without prejudice. The just or the unjust? The just. The even-tempered or the undisciplined? The even-tempered. The self-controlled or the uncontrolled? The self-controlled. In making yourself that kind of person, you will become beautiful
+
+*— 26 mayo 2026*
+
+---
+> But what does this flattery accomplish? Nothing. Worse, the admiration of shiny accolades distracts us from their true purpose. Also, as Demosthenes explains, it betrays the very ancestors who inspire us
+
+*— 05 junio 2026*
+
+---
+> seek to avoid the harmful and disruptive judgments
+ that cause those problems, then you will be stable and steady wherever you happen to be.
+
+*— 11 marzo 2026*
+
+---
+> no matter what happens, no matter how disappointing our behavior has been in the past, the principles themselves remain unchanged. We can return and embrace them at any moment. What happened yesterday—what happened five minutes ago—is the past. We can reignite and restart whenever we like.
+Why not do it right now?
+
+*— 12 marzo 2026*
+
+---
+> tranquility and peace are found in identifying our
+ path and in sticking to it: staying the course—making adjustments here and there, naturally—but ignoring the distracting sirens who beckon us to turn toward the rocks.
+
+**Note:** Remember this when small aspects of life such as noise are bothering you, have empathy and mercy
+
+*— 13 marzo 2026*
+
+---
+> In fact, we are studying philosophy precisely to break ourselves of rote behavior. Find what you do out of rote memory or routine. Ask yourself: Is this really the best way to do it?
+ Know why you do what you do—do it for the right reasons
+
+**Note:** Siempre en la busqueda de la optimización 
+
+*— 11 marzo 2026*
+
+---
+> Yes, the man in the arena is admirable. As is the soldier and the politician and the businesswoman and all the other occupations. But, and this is a big but
+ , only if we’re in the arena for the right reasons.
+
+*— 19 marzo 2026*
+
+---
+> You cry, I’m suffering severe pain! Are you then relieved from feeling it, if you bear it in an unmanly way?”
+
+—
+ S
+ ENECA,
+ M
+ ORAL
+ L
+ ETTERS
+
+*— 19 marzo 2026*
+
+---
+> is
+ possible to hold no opinion about a negative thing.
+
+*— 19 marzo 2026*
+
+---
+> The next time you find yourself in the middle of a freakout, or moaning and groaning with flulike symptoms, or crying tears of regret, just ask: Is this actually making me feel better? Is this actually relieving
+ any of the symptoms I wish were gone?
+
+*— 19 marzo 2026*
+
+---
+> The anger at being called fat or stupid has created fine physical specimens and brilliant minds. The anger at being rejected has motivated many to carve their own path.
+But that’s shortsighted. Such stories ignore the pollution produced as a side effect and the wear and tear it put on the engine. It ignores what happens when that initial anger runs out—and how now more and more must be generated to keep the machine going (until, eventually, the only source left is anger at oneself).
+
+*— 19 marzo 2026*
+
+---
+> I
+ t’s never great to judge other people, but it’s worth taking a second to investigate how a life dedicated to indulging every whim actually works out. The writer Anne Lamott jokes in Bird by Bird
+ , “Ever wonder what God thinks of money? Just look at the people he gives it to.”
+
+*— 02 abril 2026*
+
+---
+> Another has done me wrong? Let him see to it. He has his own tendencies, and his own affairs. What I have now is what the common nature has willed, and what I endeavor to accomplish now is what my nature wills.”
+
+—
+ M
+ ARCUS
+ A
+ URELIUS
+
+*— 02 abril 2026*
+
+---
+> But the mind? That’s ours. We must
+ protect it. Maintain control over your mind and perceptions, they’d say. It’s your most prized possession.
+
+*— 02 abril 2026*
+
+---
+> no one ever loses a life other than the one they are living, and no one ever lives a life other than the one they are losing. The longest and the shortest life, then, amount to the same, for the present moment lasts the same for all and is all anyone possesses. No one can lose either the past or the future, for how can someone be deprived of what’s not theirs?”
+
+—
+ M
+ ARCUS
+
+*— 13 abril 2026*
+
+---
+> You are not your body and hair-style, but your capacity for choosing well. If your choices are beautiful, so too will you be.”
+
+—
+
+*— 13 abril 2026*
+
+---
+> Someone can’t frustrate you
+ , work can’t overwhelm you
+ —these are external objects, and they have no access to your mind. Those emotions you feel, as real as they are, come from the inside, not the outside
+
+*— 13 abril 2026*
+
+---
+> We’d be crazy to want
+ to face difficulty in life. But we’d be equally crazy to pretend that it isn’t going to happen.
+
+*— 13 abril 2026*
+
+---
+> What is it then to be properly educated? It is learning to apply our natural preconceptions to the right things according to Nature, and beyond that to separate the things that lie within our power from those that don’t.”
+
+—
+ E
+ PICTETUS,
+ D
+ ISCOURSES
+ ,
+
+*— 13 abril 2026*
+
+---
+> “It isn’t events themselves that disturb people, but only their judgments about them.”
+
+—
+ E
+ PICTETUS,
+ E
+ NCHIRIDION
+ , 
+ 5
+
+*— 04 mayo 2026*
+
+---
+> Choice—to do and think right
+Refusal—of temptation
+Yearning—to be better
+Repulsion—of negativity, of bad influences, of what isn’t true
+Preparation—for what lies ahead or whatever may happen
+Purpose—our guiding principle and highest priority
+Assent—to be free of deception about what’s inside and outside our control (and be ready to accept the latter
+
+*— 07 marzo 2026*
+
+---
+> First, we must look inward.
+Next, we must examine ourselves critically.
+Finally, we must make our own decisions—uninhibited by biases or popular notions.
+
+*— 16 mayo 2026*
+
+---
+> That view might let us see things clearly without diving too much into what they might represent or what might have caused them. In other situations, particularly those that involve something impressive or praiseworthy, another approach, like that of contemptuous expressions, is helpful. By examining situations from the inside out, we can be less daunted by them, less likely to be swayed by them
+
+*— 21 mayo 2026*
+
+---
+> Remember: taking the money, wanting the money—proverbially or literally—makes you a servant to the people who have it. Indifference to it, as Seneca put it, turns the highest power into no power
+ , at least as far as your life is concerned.
+
+*— 21 mayo 2026*
+
+---
+> A Stoic has no uniform and resembles no stereotype. They are not identifiable by look or by sight or by sound.
+The only way to recognize them? By their character.
+
+*— 24 mayo 2026*
+
+---
+> Our perceptions and principles guide us in the selection of what we want—but ultimately our actions determine whether we get there or not
+
+**Note:** De nada nos sirve si solo se queda en pensamientos. Ejecución es clave, sino todo es un fachada.
+
+*— 24 mayo 2026*
+
+---
+> As Musonius Rufus put it, the justification for philosophy is when “one brings together sound teaching with sound conduct.”
+
+*— 24 mayo 2026*
+
+---
+> Would I be better saying words or letting my actions and choices illustrate that knowledge for me?
+
+*— 24 mayo 2026*
+
+---
+> After you’ve digested them, show us the changes in your reasoned choices, just like the shoulders of gymnasts display their diet and training, and as the craft of artisans show in what they’ve learned.”
+
+*— 26 mayo 2026*
+
+---
+> According to the Stoics, your mind is the asset that must be worked on most—and understood best.
+
+*— 26 mayo 2026*
+
+---
+> “Where is Good? In our reasoned choices. Where is Evil? In our reasoned choices. Where is that which is neither Good nor Evil? In the things outside of our own reasoned choice.”
+
+*— 26 mayo 2026*
+
+---
+> Let us therefore set out whole-heartedly, leaving aside our many distractions and exert ourselves in this single purpose, before we realize too late the swift and unstoppable flight of time and are left behind.
+
+*— 05 junio 2026*
+
+---
+> You have only twenty-four hours with which to take it. And then it is gone and lost forever. Will you fully inhabit all of today? Will you call out, “I’ve got this,” and do your very best to be your very best?
+
+*— 05 junio 2026*
+
+---
+> Seneca would later echo and still resounds centuries later. “Reflect, then,” he said, “that your ancestors set up those trophies, not that you may gaze at them in wonder, but that you may also imitate the virtues of the men who set them up.”
+
+*— 05 junio 2026*
+
+---
+> Most rudeness, meanness, and cruelty are a mask for deep-seated weakness. Kindness in these situations is only possible for people of great strength. You have that strength. Use it.
+
+*— 05 junio 2026*
+
+---
