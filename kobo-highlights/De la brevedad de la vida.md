@@ -99,3 +99,16 @@ imported: "2026-06-16T15:25:10.801Z"
 *— 16 junio 2026*
 
 ---
+
+## New Highlights (04 julio 2026)
+
+> Solía decir Fabiano,[28] no uno de esos filósofos profesionales, sino de los verdaderos y a la antigua, que contra los sentimientos hay que luchar con arrojo, no con sutilezas, y hay que ahuyentar sus líneas no con golpes insignificantes, sino con una carga; que <los vicios>, pues, deben ser triturados, no pellizcados.
+
+*— 16 junio 2026*
+
+---
+> el que ha deseado ambiciosamente muchas cosas, el que las ha menospreciado orgullosamente, el que ha triunfado despóticamente, el que ha engañado pérfidamente, el que ha arramblado avariciosamente, el que ha derrochado pródigamente, es natural que tema sus recuerdos.
+
+*— 16 junio 2026*
+
+---

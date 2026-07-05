@@ -35,3 +35,12 @@ imported: "2026-05-19T21:51:36.140Z"
 *— 18 mayo 2026*
 
 ---
+
+## New Highlights (04 julio 2026)
+
+> Education is what, when, and why to do things. 
+ Training is how to do it.
+
+*— 18 mayo 2026*
+
+---
