@@ -89,3 +89,26 @@ imported: "2026-05-19T21:51:36.058Z"
 *— 22 mayo 2026*
 
 ---
+
+## New Highlights (04 julio 2026)
+
+> We went where he wanted when he wanted, ate what he wanted,
+ touched or didn’t touch as much as he wanted. And honestly, I think I said it just to fuck with him: “Oh, I’m not having an
+ abortion.”
+
+*— 24 abril 2026*
+
+---
+> Get a job at Bloomingdale’s like my mom? None of it makes any sense. At least this would be
+ something.”
+
+*— 28 abril 2026*
+
+---
+> Yeah. I mean, there were a few more times after we got home from our honeymoon, but after that we stopped, yeah.”
+ 
+ “Did you feel guilty?” she asked. It was hard to tell what men felt, she realized
+
+*— 22 mayo 2026*
+
+---
